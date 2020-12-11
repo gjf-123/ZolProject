@@ -1,0 +1,44 @@
+{
+  "id": "2265432",
+  "name": "ZOL",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "880295",
+      "name": "速度计",
+      "font_class": "sudujispeedometer29",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "963806",
+      "name": "服务超市",
+      "font_class": "fuwuchaoshi",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1253897",
+      "name": "保障",
+      "font_class": "9",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "4166137",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "6562297",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    }
+  ]
+}
