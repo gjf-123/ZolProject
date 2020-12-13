@@ -7,28 +7,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./fonts/font_2265432_w6jrp4yvylo/iconfont.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="index_module"></script>
 </head>
 
 <body>
-    <!-- header -->
+    <!-- 头部 -->
     <header class="header">
-        <div class="header-top">
-            <div class="left">
-                <ul>
-                    <li><a href="#">中关村在线</a><span>|</span></li>
-                    <li><a href="#">ZOL企业购</a><span>|</span></li>
-                    <li><a href="#">解决方案馆</a><span>|</span></li>
-                    <li><a href="#">中在指数</a><span>|</span></li>
-                    <li><a href="#">供应商入驻</a></li>
-                </ul>
+        <section>
+            <div class="header-top">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">中关村在线</a><span>|</span></li>
+                        <li><a href="#">ZOL企业购</a><span>|</span></li>
+                        <li><a href="#">解决方案馆</a><span>|</span></li>
+                        <li><a href="#">中在指数</a><span>|</span></li>
+                        <li><a href="#">供应商入驻</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#">登录</a><span>|</span></li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#">登录</a><span>|</span></li>
-                    <li><a href="#">注册</a></li>
-                </ul>
-            </div>
-        </div>
+        </section>
         <div class="header-bot">
             <div class="a1">
                 <a href="https://www.zol.com"><img src="./img/logo.34b1b031.png" alt="#"></a>
@@ -42,12 +45,14 @@
                     <a href="http://list.zol.com/b/list.html">搜索</a>
                 </div>
                 <div class="search-bot">
-                    <a href="#">激光打印机</a> <span>|</span>
-                    <a href="#">商用显示</a><span>|</span>
-                    <a href="#">投影机</a><span>|</span>
-                    <a href="#">复印机</a><span>|</span>
-                    <a href="#">硒鼓</a><span>|</span>
-                    <a href="#">墨盒</a>
+                    <div>
+                        <a href="#">激光打印机</a> <span>|</span>
+                        <a href="#">商用显示</a><span>|</span>
+                        <a href="#">投影机</a><span>|</span>
+                        <a href="#">复印机</a><span>|</span>
+                        <a href="#">硒鼓</a><span>|</span>
+                        <a href="#">墨盒</a>
+                    </div>
                 </div>
             </div>
             <div class="a3">
@@ -55,6 +60,691 @@
             </div>
         </div>
     </header>
+    <!-- 主体 -->
+    <section class="main">
+        <!-- lunbo -->
+        <div class="lunbo-top">
+            <div class="nav">
+                <div>
+                    <span>全部商品分类</span>
+                </div>
+                <a href="" target="_blank">解决方案馆</a>
+                <a href="" target="_self">政府采购</a>
+                <a href="" target="_self">企业采购</a>
+                <a href="" target="_self">福利采购</a>
+                <a href="" target="_self" class="last">中在指数
+                    <!-- <div><a href="">价格指数</a><a href="">销量指数</a><a href="">交易指数</a><a href="">品牌指数</a></div> -->
+            </a>
+        </div>
+        <!-- 二级菜单 -->
+        <!-- <div class="banner">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">笔记本</a><span>/</span><a href="#">超极本</a><span>/</span><a href="#">台式电脑</a>
+                    </li>
+                    <li>
+                        <a href="#">办公打印</a><span>/</span><a href="#">投影</a><span>/</span><a href="#">监控</a><span>/</span><a href="#">软件</a>
+                    </li>
+                    <li>
+                        <a href="#">厨卫电器</a><span>/</span><a href="#">小家电</a><span>/</span><a href="#">生活家电</a>
+                    </li>
+                    <li>
+                        <a href="#">大家电</a><span>/</span><a href="#">影音电视</a><span>/</span><a href="#">游戏机</a>
+                    </li>
+                    <li>
+                        <a href="#">手机</a><span>/</span><a href="#">智能手机</a><span>/</span><a href="#">通讯产品</a>
+                    </li>
+                    <li>
+                        <a href="#">数码产品</a><span>/</span><a href="#">单反</a><span>/</span><a href="#">数码摄像</a>
+                    </li>
+                    <li>
+                        <a href="#">服务器</a><span>/</span><a href="#">网络</a><span>/</span><a href="#">无线</a><span>/</span><a href="#">布线</a>
+                    </li>
+                    <li>
+                        <a href="#">DIY硬件</a><span>/</span><a href="#">外设</a><span>/</span><a href="#">模拟攒机</a>
+                    </li>
+                    <li>
+                        <a href="#">平板电脑</a><span>/</span><a href="#">智能穿戴</a><span>/</span><a href="#">家居</a>
+                    </li>
+                    <li>
+                        <a href="#">汽车电子</a><span>/</span><a href="#">电动车</a><span>/</span><a href="#">出行</a>
+                    </li>
+                    <li>
+                        <a href="#">手机</a><span>/</span><a href="#">MP3</a><span>/</span><a href="#">移动电源</a>
+                    </li>
+                </ul>
+                <div class="cartlist">
+                    <div class="item">
+
+                    </div>
+                    <div class="item">第二块内容</div>
+                    <div class="item">第三块内容</div>
+                    <div class="item">第四块内容</div>
+                    <div class="item">354325432532454325</div>
+                    <div class="item">gfsdgfdsgdsfgdsfgsdfg</div>
+                    <div class="item">sdfgfdsgdsfg</div>
+                    <div class="item">ytururyrrtyuytyuyturetewrtewrtrewt</div>
+                    <div class="item">第四dfsgdfg块内容</div>
+                    <div class="item">第四fdsgfds块内容</div>
+                    <div class="item">第四gsfdgfdsg块内容</div>
+                    <div class="item">第四fdsgfdsgsdf块内容</div>
+                    <div class="item">第四块内容fadsfdsafsdafdasfdasfasfdasf</div>
+                    <div class="item">第四块farqewr34内容</div>
+                    <div class="item">第四块rewqr45325423543254325内容</div>
+                    <div class="item">第四块bnmnbmhjkyuutu65内容</div>
+                    <div class="item">第四2343254325块内容</div>
+                    <div class="item">第四43254354325432543254325块内容</div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+        <div class="lunbo-bot"></div>
+        <div class="mid">
+            <div class="mid1-top">
+                <h3>热门采购</h3>
+            </div>
+            <div class="mid1-bot">
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/05/0B/ChMkJlui7riIUOZCAAD4LybxuM4AAr3ugAaTE0AAPhH540.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g3/M05/0C/01/ChMlV17iD9yIPOFFAAFer7OgX3IAAUpsAFM0SUAAV7H287.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M03/00/0D/Cg-4WlHRS0yIfdoaAAIkAUjvtRgAAKCmQDCTQoAAiQZ034.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M07/09/04/Cg-4jlN79fSIYdTYAABi6sjONkcAANkcQOWYRcAAGMC496.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/00/06/ChMkJ1vyXLeIcuRPAAC5xSbh4BkAAtPvgMlLUIAALnd778.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+                <a href="">
+                    <div><img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g3/M01/04/09/Cg-4WFI-hjmIU0n-AAJ-F8rlk0wAAL7RQHv4-cAAn4v120.jpg" alt=""></div>
+                    <p class="proname">魅族16X（全网通）</p>
+                    <p class="price">￥999.00</p>
+                    <button class="shop">立即采购</button>
+                </a>
+
+
+            </div>
+            <div class="mid2">
+                <img src="./img/wrbanner.616c6329.jpg" alt="">
+            </div>
+            <div class="mid3">
+                <div class="catgegory_title">
+                    <h3>办公设备/办公耗材</h3>
+                    <div>
+                        <a href="">办公打印</a>
+                        <a href="">考勤门禁系统</a>
+                        <a href="">投影</a>
+                        <a href="">监控</a>
+                    </div>
+                </div>
+                <div class="catgegory_content">
+                    <div>
+                        <div class="content1">
+                            <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/floor01.ce043a8d.jpg" alt="">
+                            <h3>优品高效</h3>
+                        </div>
+                    </div>
+                    <ul class="content_li">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/00/06/ChMkJ1vyXLeIcuRPAAC5xSbh4BkAAtPvgMlLUIAALnd778.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/02/08/ChMkJ1bg4qiIAr6ZAABoUOYzIXwAANIwwITsaoAAGho050.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/03/01/ChMkJ1mpI2eICt4XAAA9ZzPbmDkAAgHaANWxCUAAD1_520.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0E/07/ChMkJlsWTwGIHvT0AAFlRMvDRAgAAo0QwErEUAAAWVc378.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0A/07/ChMkJlhTrxKId6gYAABGLpJuU1wAAYmYQFBRscAAEZG860.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/04/0D/ChMkJ1h1pMKIdCw9AAOtGXszyOsAAZP4AAAAAAAA60x571.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/06/01/ChMkJ1va6P6IF6gVAAEUAz6RB6QAAs5NQPnXkgAARQb183.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M07/0D/05/Cg-4WVDdDcSIEcmvAABic5qtkJIAAD03AAHvOAAAGKL645.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="catgegory_title">
+                    <h3>办公设备/办公耗材</h3>
+                    <div>
+                        <a href="">办公打印</a>
+                        <a href="">考勤门禁系统</a>
+                        <a href="">投影</a>
+                        <a href="">监控</a>
+                    </div>
+                </div>
+                <div class="catgegory_content">
+                    <div>
+
+                        <div class="content1">
+                            <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/floor02_01.dd526fdd.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <ul class="content_li">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0F/02/ChMkJl3khA2IFfFzAAHzseQYTfcAAviBAM_3RoAAfPJ035.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0F/07/ChMkJlsaO26IOzM6AABHTAXOVZUAAo4YAOyT30AAEdk396.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0F/07/ChMkJ1saP3KIUla_AABHTAXOVZUAAo4agKHRZkAAEdk440.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/07/02/ChMkJlkZSnCIQN13AACN9IzG0KAAAcYNAN3g24AAI4M666.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M03/00/0D/Cg-4WlHRS0yIfdoaAAIkAUjvtRgAAKCmQDCTQoAAiQZ034.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M07/09/04/Cg-4jlN79fSIYdTYAABi6sjONkcAANkcQOWYRcAAGMC496.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/08/09/ChMlWV1Km6mIP3b7AAFNWzUIiDwAAMbuQO-80UAAU1z051.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g3/M09/05/0F/Cg-4V1JA8niICknTAADoL3FhM_4AAMAvQNZOtcAAOhH600.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="catgegory_title">
+                    <h3>办公设备/办公耗材</h3>
+                    <div>
+                        <a href="">办公打印</a>
+                        <a href="">考勤门禁系统</a>
+                        <a href="">投影</a>
+                        <a href="">监控</a>
+                    </div>
+                </div>
+                <div class="catgegory_content">
+                    <div>
+
+                        <div class="content1">
+                            <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/floor03.41be7eec.jpg" alt="">
+                            <h3>优品高效</h3>
+                        </div>
+                    </div>
+                    <ul class="content_li">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/0E/0D/ChMlWlzP0IWIfwmEAAD5xbfNlrgAAJ1MwBDVTwAAPnd096.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/01/0F/ChMkJl3xpimINa62AAFnNqoSM5oAAvtBgPIszAAAWdO503.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0F/0C/ChMkJlk6dM6IWRhIAABwpYiNuu4AAc6jQP_O-kAAHC9181.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M08/04/0A/Cg-4y1T__jaIFUimAAEiEsNSkVUAAWhDAAAzZgAASIq986.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M01/07/07/Cg-4jlMqjtSIHkveAADDriWPxy0AALddwP0tfEAAMPG499.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/09/04/ChMkJls90t-IAz4_AAEeTFeu39MAApfkwKXQIkAAR5k390.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/02/0D/ChMlWl22X4-ISAGUAAHZVOpcDY0AANA3QKkIWIAAdls940.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/04/01/ChMkJlcxVpyIYuDPAABQTNujCjcAAROxQKhXtkAAFBk504.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="catgegory_title">
+                    <h3>办公设备/办公耗材</h3>
+                    <div>
+                        <a href="">办公打印</a>
+                        <a href="">考勤门禁系统</a>
+                        <a href="">投影</a>
+                        <a href="">监控</a>
+                    </div>
+                </div>
+                <div class="catgegory_content">
+                    <div>
+                        <div class="content1">
+                            <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/floor05.e4b55abb.jpg" alt="">
+                            <h3>优品高效</h3>
+                        </div>
+                    </div>
+                    <ul class="content_li">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/05/0B/ChMkJlui7riIUOZCAAD4LybxuM4AAr3ugAaTE0AAPhH540.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/08/09/ChMlWl1KqRmIO6_BAAEMBQYgMKgAAMbzQJLT0AAAQwd389.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M01/03/0F/Cg-4jVMiW0iIBrKxAAB8EvRoWhgAALPlwL5h0IAAHwq061.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M05/0F/06/Cg-4jlMEItGIULT1AACy2rs7iAgAAH9dwCGNwUAALLy403.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M06/03/07/ChMljl41JKeIebFmAAFPUoQisnoAAQJagPaL8MAAU9q848.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/09/03/ChMkJlxjf_2IJEN_AAPOi4GatYgAAu3mQL3PfMAA86j214.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/0D/00/ChMlWV1d_P2IPy0cAAC25802Qb4AAMtSQMG6BUAALb_336.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/03/08/ChMlWV25SN2IJ4xuAAIWULpr2R4AANDnAP2ae8AAhZo717.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="catgegory_title">
+                    <h3>办公设备/办公耗材</h3>
+                    <div>
+                        <a href="">办公打印</a>
+                        <a href="">考勤门禁系统</a>
+                        <a href="">投影</a>
+                        <a href="">监控</a>
+                    </div>
+                </div>
+                <div class="catgegory_content">
+                    <div>
+                        <div class="content1">
+                            <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/floor06.9b772be5.jpg" alt="">
+                            <h3>优品高效</h3>
+                        </div>
+                    </div>
+                    <ul class="content_li">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/09/08/ChMlWlz07nOIVWV-AADFUXbghKsAAKfrwPIXD8AAMVp637.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g3/M0B/0D/00/Cg-4WFFBfNeIae16AABkIU0TUN8AAFzcAJAkogAAGQ5021.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0A/01/ChMkJ1oeJ-iIGzp1AAGMd9pmYXcAAijLQPRSHEAAYyP535.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0B/04/ChMkJlglk_WIZkZIAADe0uY9ziAAAXqIAIlmIUAAN7q330.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M01/06/0E/Cg-4jlNMlqSIFz3OAADggmA6aL0AAMbMwJY3g4AAOCa530.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/01/03/ChMkJltXGYyIRsGuAADeQRRCAs0AAp_RgPqStQAAN5Z662.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/0C/0D/Cg-4WVWVDruIW-TSAAA66TYbhqsAAGW-gGdAqUAADsB260.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+                        <li style=" margin-right: 0px;">
+                            <a href="">
+                                <div>
+                                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/07/05/ChMkJlwN2Q2IdGTVAADqGNImkZ4AAtrcwAxNmwAAOow323.jpg" alt="">
+                                </div>
+                                <p class="title">
+                                    联想LJ2268
+                                </p>
+                                <p class="price">￥789.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 脚部 -->
+    <footer>
+        <section>
+            <div>
+                <p class="p1"><span class="iconfont icon-kefu p2"></span>热线电话<span class="p3">400-688-1999</span></p>
+                <p>©2020 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</p>
+                <p><span>京ICP证150096号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14061128号&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010802020026号&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证京网文[2016]1631-199&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：京B2-20200543</span></p>
+            </div>
+            <img src="./img/QRcode.bf108c87.png" alt="">
+
+        </section>
+    </footer>
 
 
 </body>
