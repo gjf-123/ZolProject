@@ -258,24 +258,14 @@ a {
       width: 100%;
       height: 100%; }
 
-section {
-  width: 100%;
-  background-color: red;
-  margin-top: 20px; }
-  section .wrapper {
-    background: url("../img/img.255eac05.png") no-repeat;
-    width: 1200px;
-    height: 600px;
-    margin: 0 auto;
-    position: relative; }
-    section .wrapper div {
-      position: absolute;
-      top: 180px;
-      right: 0;
-      padding: 40px 26px;
-      width: 298px;
-      background: #fff;
-      border-radius: 4px; }
+.fieldset {
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 330px; }
+  .fieldset p {
+    font-size: 50;
+    color: red; }
 
 footer {
   width: 100%;
@@ -309,4 +299,4 @@ footer {
       right: 2px;
       top: 25px; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=registry.css.map */

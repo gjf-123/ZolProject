@@ -1,11 +1,22 @@
 section {
     width: 100%;
-    height: 600px;
+    // height: 600px;
+    background-color: red;
+    margin-top: 20px;
     .wrapper {
         background: url("../img/img.255eac05.png") no-repeat;
         width: 1200px;
         height: 600px;
         margin: 0 auto;
         position: relative;
+        div {
+            position: absolute;
+            top: 180px;
+            right: 0;
+            padding: 40px 26px;
+            width: 298px;
+            background: #fff;
+            border-radius: 4px;
+        }
     }
 }

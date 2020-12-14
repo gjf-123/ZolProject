@@ -4,11 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/registry.css">
 </head>
 
 <body>
+    <header class="header">
+        <section>
+            <div class="header-top">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">中关村在线</a><span>|</span></li>
+                        <li><a href="#">ZOL企业购</a><span>|</span></li>
+                        <li><a href="#">解决方案馆</a><span>|</span></li>
+                        <li><a href="#">中在指数</a><span>|</span></li>
+                        <li><a href="#">供应商入驻</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="login.html">登录</a><span>|</span></li>
+                        <li><a href="registry.html">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="header-bot">
+            <div class="a1">
+                <a href="https://www.zol.com"><img src="./img/logo.34b1b031.png" alt="#"></a>
+            </div>
+            <div class="a2">
+                <div class="search-top">
+                    <div>
+                        <span class="iconfont icon-sousuo"></span>
+                        <input type="text" maxlength="50" placeholder="找找您想要的产品">
+                    </div>
+                    <a href="http://list.zol.com/b/list.html">搜索</a>
+                </div>
+                <div class="search-bot">
+                    <div>
+                        <a href="#">激光打印机</a> <span>|</span>
+                        <a href="#">商用显示</a><span>|</span>
+                        <a href="#">投影机</a><span>|</span>
+                        <a href="#">复印机</a><span>|</span>
+                        <a href="#">硒鼓</a><span>|</span>
+                        <a href="#">墨盒</a>
+                    </div>
+                </div>
+            </div>
+            <div class="a3">
+                <img src="./img/QRcode.bf108c87.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="fieldset">
+        <p> 填写账户信息</p>
+        <fieldset>
+            <legend>用户注册</legend>
+            <form action="http://localhost/2009/new/projectname/php/reg.php" method="post">
+                <p><label for="">用户名：</label><input type="text" name="username" id="username"><span></span></p>
+                <p><label for="">密　码：</label><input type="password" name="password"></p>
+                <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+                <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+            </form>
+        </fieldset>
+    </section>
+    <footer>
+        <section>
+            <div>
+                <p class="p1"><span class="iconfont icon-kefu p2"></span>热线电话<span class="p3">400-688-1999</span></p>
+                <p>©2020 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</p>
+                <p><span>京ICP证150096号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14061128号&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010802020026号&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证京网文[2016]1631-199&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：京B2-20200543</span></p>
+            </div>
+            <img src="./img/QRcode.bf108c87.png" alt="">
 
+        </section>
+    </footer>
 </body>
 
 </html>

@@ -23,8 +23,8 @@
                 </div>
                 <div class="right">
                     <ul>
-                        <li><a href="#">登录</a><span>|</span></li>
-                        <li><a href="#">注册</a></li>
+                        <li><a href="login.html">登录</a><span>|</span></li>
+                        <li><a href="registry.html">注册</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,22 +37,30 @@
     </header>
     <section>
         <div class="wrapper">
-
-
             <div>
                 <fieldset style="width:500px;margin:0 auto;">
-                    <legend>用户登录</legend>
+                    <legend>会员登录</legend>
                     <form action="http://localhost/2009/new/projectname/php/login.php" method="post">
-                        <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
-                        <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
-                        <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
+                        <p style="margin-top: 15px;"><label for="">用户名：</label><input type="text" name="username" id="username" placeholder="请输入用户名/手机号"></p>
+                        <p style="margin-top: 15px;"><label for="">密　码：</label><input type="password" name="password" id="password" placeholder="密码"></p>
+                        <p style="margin-top: 15px;"><input type="button" value="登录" id="login" style="background-color: red;width: 237px;"></p>
+                        <p style="margin-top: 15px;"><a href="registry.html">立即注册</a></p>
                     </form>
                 </fieldset>
             </div>
-
-
         </div>
     </section>
+    <footer>
+        <section>
+            <div>
+                <p class="p1"><span class="iconfont icon-kefu p2"></span>热线电话<span class="p3">400-688-1999</span></p>
+                <p>©2020 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</p>
+                <p><span>京ICP证150096号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14061128号&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010802020026号&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证京网文[2016]1631-199&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：京B2-20200543</span></p>
+            </div>
+            <img src="./img/QRcode.bf108c87.png" alt="">
+
+        </section>
+    </footer>
 </body>
 
 </html>

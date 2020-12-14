@@ -26,6 +26,7 @@ define([], () => {
                 }
             }, function() {
                 $cartlist.hide();
+                $(this).removeClass('active')
             });
 
             //2.鼠标移入右侧的大盒子，大盒子依然显示隐藏
