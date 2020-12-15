@@ -70,6 +70,10 @@
                 outline: none;
                 cursor: pointer;
                 color: #fc002d;
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
             }
         }
     }
@@ -209,7 +213,7 @@ ul {
     height: 390px;
     width: 1200px;
     margin: 0 auto;
-    z-index: 100;
+    // z-index: 100;
     .fieldset {
         background-color: white;
         position: absolute;
@@ -218,6 +222,7 @@ ul {
         padding: 3px;
         margin-top: 5px;
         width: 233px;
+        font-size: 14px;
     }
     .news {
         width: 240px;
