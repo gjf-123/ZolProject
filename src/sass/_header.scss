@@ -10,6 +10,7 @@ $height:30px;
             margin: 0 auto;
             width: $width;
             height: $height;
+            position: relative;
             .left {
                 float: left;
                 a {
@@ -28,6 +29,13 @@ $height:30px;
                     &:hover {
                         color: red;
                     }
+                }
+            }
+            .admin {
+                position: absolute;
+                right: 0;
+                a {
+                    color: red;
                 }
             }
             .left li {

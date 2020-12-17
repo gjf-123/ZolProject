@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车列表展示</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="cart_module"></script>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <div class="header-top">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">中关村在线</a><span>|</span></li>
+                        <li><a href="#">ZOL企业购</a><span>|</span></li>
+                        <li><a href="#">解决方案馆</a><span>|</span></li>
+                        <li><a href="#">中在指数</a><span>|</span></li>
+                        <li><a href="#">供应商入驻</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="login.html">登录</a><span>|</span></li>
+                        <li><a href="registry.html">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="header-bot">
+            <div class="a1">
+                <a href="https://www.zol.com"><img src="./img/logo.34b1b031.png" alt="#"></a>
+            </div>
+            <div class="a2">
+                <div class="search-top">
+                    <div>
+                        <span class="iconfont icon-sousuo"></span>
+                        <input type="text" maxlength="50" placeholder="找找您想要的产品">
+                    </div>
+                    <a href="http://list.zol.com/b/list.html">搜索</a>
+                </div>
+                <div class="search-bot">
+                    <div>
+                        <a href="#">激光打印机</a> <span>|</span>
+                        <a href="#">商用显示</a><span>|</span>
+                        <a href="#">投影机</a><span>|</span>
+                        <a href="#">复印机</a><span>|</span>
+                        <a href="#">硒鼓</a><span>|</span>
+                        <a href="#">墨盒</a>
+                    </div>
+                </div>
+            </div>
+            <div class="a3">
+                <img src="./img/QRcode.bf108c87.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div id="container" class="cart">
+        <div class="w">
+            <!--全部商品哪一行-->
+
+            <!--包裹购物车-->
+            <div class="cart-wrap" style="display: block;">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="cart-col t-goods">商品</div>
+                                <div class="cart-col t-props"></div>
+                                <div class="cart-col t-prices">单价(元)</div>
+                                <div class="cart-col t-quantity">数量</div>
+                                <div class="cart-col t-sum">小计(元)</div>
+                                <div class="cart-col t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <!-- 显示购物车列表 -->
+                                        <div class="item-list">
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href="">Apple iMac 27英寸一体机（Core i5
+                                                                        处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-props">
+                                                        <div class="prop-text"></div>
+                                                    </div>
+                                                    <div class="cell b-price">
+                                                        <strong>13488.00</strong>
+                                                        <div class="sales-promotion-dropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                        </div>
+                                                        <div class="quantity-text">有货</div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        <strong>13488.00</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="javascript:void(0)">删除</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:void(0)">删除选中的商品</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a href=""></a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">总价（不含运费）：</span>
+                                <span class="totalprice">￥0.00</span>
+                                <span class="txt">已节省：</span>
+                                <span class="totalsave">-￥0.00</span>
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>0</em> 件商品
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section>
+            <div>
+                <p class="p1"><span class="iconfont icon-kefu p2"></span>热线电话<span class="p3">400-688-1999</span></p>
+                <p>©2020 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</p>
+                <p><span>京ICP证150096号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14061128号&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010802020026号&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证京网文[2016]1631-199&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：京B2-20200543</span></p>
+            </div>
+            <img src="./img/QRcode.bf108c87.png" alt="">
+
+        </section>
+    </footer>
+</body>
+
+</html>

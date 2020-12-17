@@ -55,7 +55,7 @@ define(['pagination', 'jlazyload'], function() {
                             data = datalist.pagedata; //获取接口里面数据
                             let $strhtml = '';
                             $.each(data, function(index, value) {
-                                $strhtml += `s
+                                $strhtml += `
                                         <li>
                                             <a href="detail.html?sid=${value.sid}">
                                                 <img class="lazy" data-original="${value.url}" width="200" height="200"/>

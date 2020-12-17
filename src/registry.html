@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册页面</title>
     <link rel="stylesheet" href="./css/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
@@ -58,14 +59,21 @@
         </div>
     </header>
     <section class="fieldset">
-        <p> 填写账户信息</p>
+        <div>
+            <p> 填写账户信息</p>
+        </div>
         <fieldset>
-            <legend>用户注册</legend>
-            <form action="http://localhost/2009/new/projectname/php/reg.php" method="post">
-                <p><label for="">用户名：</label><input type="text" name="username" id="username"><span></span></p>
-                <p><label for="">密　码：</label><input type="password" name="password"></p>
-                <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+            <form action="http://10.31.161.16/ZolProject/PHP/reg.php" method="post" id="form1">
+                <p><label for="">用户姓名：</label><input type="text" name="username" placeholder="请输入用户名"><span></span></p>
+                <p><label for="">手机号码：</label><input type="text" name="tel" placeholder="请输入手机号码"><span></span></p>
+                <p><label for="">用户密码：</label><input type="password" name="password" placeholder="请输入密码"><span></span></p>
+                <p><label for="">用户邮箱：</label><input type="text" name="email" placeholder="请输入邮箱"><span></span></p>
                 <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+                <div>
+                    <span>
+                        <a href="./login.html">已有账号登录</a>
+                    </span>
+                </div>
             </form>
         </fieldset>
     </section>

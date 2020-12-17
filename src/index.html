@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>商城首页</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./fonts/font_2265432_w6jrp4yvylo/iconfont.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="index_module"></script>
-    <script src="./script/lunbo.js"></script>
 </head>
 
 <body>
@@ -25,11 +24,15 @@
                         <li><a href="#">供应商入驻</a></li>
                     </ul>
                 </div>
-                <div class="right">
+                <div class="right login">
                     <ul>
                         <li><a href="login.html">登录</a><span>|</span></li>
                         <li><a href="registry.html">注册</a></li>
                     </ul>
+                </div>
+                <div class="admin" style="display: none;">
+                    <span></span>：欢迎光临
+                    <a href="javascript:;">退出</a>
                 </div>
             </div>
         </section>
@@ -320,7 +323,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/07/02/ChMkJlkZSnCIQN13AACN9IzG0KAAAcYNAN3g24AAI4M666.jpg" alt="">
@@ -364,7 +367,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g3/M09/05/0F/Cg-4V1JA8niICknTAADoL3FhM_4AAMAvQNZOtcAAOhH600.jpg" alt="">
@@ -429,7 +432,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M08/04/0A/Cg-4y1T__jaIFUimAAEiEsNSkVUAAWhDAAAzZgAASIq986.jpg" alt="">
@@ -473,7 +476,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/04/01/ChMkJlcxVpyIYuDPAABQTNujCjcAAROxQKhXtkAAFBk504.jpg" alt="">
@@ -537,7 +540,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g1/M05/0F/06/Cg-4jlMEItGIULT1AACy2rs7iAgAAH9dwCGNwUAALLy403.jpg" alt="">
@@ -581,7 +584,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g2/M00/03/08/ChMlWV25SN2IJ4xuAAIWULpr2R4AANDnAP2ae8AAhZo717.jpg" alt="">
@@ -645,7 +648,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/0B/04/ChMkJlglk_WIZkZIAADe0uY9ziAAAXqIAIlmIUAAN7q330.jpg" alt="">
@@ -689,7 +692,7 @@
                                 <p class="price">￥789.00</p>
                             </a>
                         </li>
-                        <li style=" margin-right: 0px;">
+                        <li>
                             <a href="">
                                 <div>
                                     <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g5/M00/07/05/ChMkJlwN2Q2IdGTVAADqGNImkZ4AAtrcwAxNmwAAOow323.jpg" alt="">
@@ -718,110 +721,6 @@
 
         </section>
     </footer>
-    <script type="text/javascript">
-        var baidu = document.querySelector('.baidu');
-        var aBtn = document.querySelectorAll('.baidu ol li'); //8个按钮
-        var aPicList = document.querySelectorAll('.pic_list li'); //8张图
-        var oLeft = document.querySelector('#btn_left');
-        var oRight = document.querySelector('#btn_right');
-        var oUl = document.querySelector('.pic_list');
-        var num = 0;
-        var timer = null;
-        var bstop = true; //确保回调函数执行。
-        //1.改变布局
-        var firstLi = aPicList[0].cloneNode(true);
-        var lastLi = aPicList[aPicList.length - 1].cloneNode(true);
-        oUl.insertBefore(lastLi, oUl.children[0]);
-        oUl.appendChild(firstLi);
-
-        //2.给ul设置宽度
-        var liwidth = aPicList[0].offsetWidth;
-        aPicList = oUl.children; //10张图
-        oUl.style.width = liwidth * aPicList.length + 'px';
-        oUl.style.left = -liwidth + 'px';
-
-
-        //3.按钮添加点击事件进行类的切换图片的运动
-        for (var i = 0; i < aBtn.length; i++) {
-            aBtn[i].index = i; //按钮上面自定义索引
-            aBtn[i].onclick = function() {
-                num = this.index; //当前的索引0-7
-                tabswitch();
-                aBtn[num].className = 'active';
-            }
-        }
-
-        //4.左右箭头显示
-        // baidu.onmouseover = function() {
-        //     oLeft.style.display = 'block';
-        //     oRight.style.display = 'block';
-        //     clearInterval(timer);
-        // };
-        // baidu.onmouseout = function() {
-        //     oLeft.style.display = 'none';
-        //     oRight.style.display = 'none';
-        //     timer = setInterval(function() {
-        //         oRight.onclick();
-        //     }, 2000);
-        // };
-
-        //5.左右箭头添加点击事件
-        oRight.onclick = function() {
-            if (bstop) {
-                bstop = false;
-                num++;
-                tabswitch();
-                if (num == aBtn.length) {
-                    aBtn[0].className = 'active';
-                } else {
-                    aBtn[num].className = 'active';
-                }
-            }
-
-        }
-
-
-        oLeft.onclick = function() {
-            if (bstop) {
-                bstop = false;
-                num--;
-                tabswitch();
-                if (num == -1) {
-                    aBtn[aBtn.length - 1].className = 'active';
-                } else {
-                    aBtn[num].className = 'active';
-                }
-            }
-        }
-
-        //切换的函数
-        function tabswitch() {
-            for (var i = 0; i < aBtn.length; i++) {
-                aBtn[i].className = '';
-            }
-            //移动的核心
-            buffermove(oUl, {
-                left: -liwidth * (num + 1)
-            }, function() {
-                //每次运动完成之后确认是否是最后一张，如果是，位置重新设置
-                if (num == aBtn.length) {
-                    oUl.style.left = -liwidth + 'px';
-                    num = 0; //重置了
-                }
-
-                if (num == -1) {
-                    oUl.style.left = -liwidth * aBtn.length + 'px';
-                    num = aBtn.length - 1;
-                }
-                bstop = true;
-            });
-        }
-
-
-        timer = setInterval(function() {
-            oRight.onclick();
-        }, 2000);
-    </script>
 
 </body>
 

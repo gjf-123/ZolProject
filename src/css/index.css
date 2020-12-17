@@ -146,7 +146,8 @@ a {
       line-height: 30px;
       margin: 0 auto;
       width: 1200px;
-      height: 30px; }
+      height: 30px;
+      position: relative; }
       .header section .header-top .left {
         float: left; }
         .header section .header-top .left a {
@@ -161,6 +162,11 @@ a {
           font-size: 12px; }
           .header section .header-top .right a:hover {
             color: red; }
+      .header section .header-top .admin {
+        position: absolute;
+        right: 0; }
+        .header section .header-top .admin a {
+          color: red; }
       .header section .header-top .left li {
         margin: 0 5px;
         float: left; }
@@ -383,8 +389,7 @@ a {
           background: #fff;
           cursor: pointer;
           margin-bottom: 13px;
-          float: left;
-          margin-right: 12px; }
+          float: left; }
           .mid .mid3 .catgegory_content .content_li li:hover .title {
             color: red; }
           .mid .mid3 .catgegory_content .content_li li:hover img {
@@ -421,6 +426,10 @@ a {
               color: #f33;
               margin: 15px auto 0;
               text-align: center; }
+        .mid .mid3 .catgegory_content .content_li:nth-child(4) {
+          margin-right: 0px !important; }
+        .mid .mid3 .catgegory_content .content_li:nth-child(8) {
+          margin-right: 0px !important; }
 
 ul {
   list-style: none; }

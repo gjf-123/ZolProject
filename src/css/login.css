@@ -146,7 +146,8 @@ a {
       line-height: 30px;
       margin: 0 auto;
       width: 1200px;
-      height: 30px; }
+      height: 30px;
+      position: relative; }
       .header section .header-top .left {
         float: left; }
         .header section .header-top .left a {
@@ -161,6 +162,11 @@ a {
           font-size: 12px; }
           .header section .header-top .right a:hover {
             color: red; }
+      .header section .header-top .admin {
+        position: absolute;
+        right: 0; }
+        .header section .header-top .admin a {
+          color: red; }
       .header section .header-top .left li {
         margin: 0 5px;
         float: left; }
